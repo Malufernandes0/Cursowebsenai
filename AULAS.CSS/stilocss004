@@ -1,0 +1,12 @@
+
+    <style>
+        h1{
+            color: blueviolet;
+        }
+        h2{
+            color: beige;
+        }
+        h3{
+            color: blue;
+        }
+    </style>

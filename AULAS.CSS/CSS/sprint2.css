@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 120px;
+    padding: 60px;
+    border: none;
+  }
+  
+  .container {
+    width: 50%;
+    margin: 100px auto;
+    background: #fff;
+    padding: 20px;
+   
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .clear {
+    clear: both;
+}
+button {
+    background-color: #0056b3;
+    width: 600px;
+  }
+ 

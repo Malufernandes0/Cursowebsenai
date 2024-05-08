@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float e Clear</title>
+    <style>
+        .conteudo {
+            margin: 2px, solid black;
+            background-color: rgb(72, 72, 207);
+            padding: 60px;
+            margin: 60px;
+            width: 150px;
+            height: 150px;
+            float: center;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .principal {
+            margin: solid black 3px;
+            background-color: rgb(134, 199, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="conteudo">
+            CONTEÚDO 01
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="conteudo">
+            CONTEÚDO 02
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="conteudo">
+            CONTEÚDO 03
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+        </div>
+        <div class="clear">
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ut doloremque at, cum laudantium,
+                assumenda dolore eius modi eligendi consequuntur molestiae cupiditate ipsum neque beatae quibusdam. Ipsa
+                asperiores neque perspiciatis!</p>
+        </div>
+        <div class="principal">
+            <div class="conteudo">
+                CONTEÚDO 01
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="conteudo">
+                CONTEÚDO 02
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="conteudo">
+                CONTEÚDO 03
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+            </div>
+            <div class="clear">
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ut doloremque at, cum laudantium,
+                    assumenda dolore eius modi eligendi consequuntur molestiae cupiditate ipsum neque beatae quibusdam.
+                    Ipsa asperiores neque perspiciatis!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
