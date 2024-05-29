@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box-Sizing - Border-Box</title>
+<style>
+.caixa{
+width: 300px;
+height: 300px;
+padding: 50px;
+background-color: tomato;
+box-sizing: border-box;
+
+}
+.caixa2{
+width: 300px;
+height: 300px;
+background-color: rgb(128, 158, 38);
+}
+@keyframes animacao{
+from{
+background-color: aqua;
+border-radius: 50%;
+top: 0px;
+left: 0px;
+}
+to{
+background-color: blue;
+top: 200px;
+left: 200px;
+}
+}
+.box{
+background-color: aqua;
+width: 300px;
+height: 300px;
+animation-name: animacao;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+position: absolute;}
+@keyframes loading {
+from {
+transform: rotate(0);
+}
+to {
+transform: rotate(360deg);
+}
+}
+.spinner {
+animation-name: loading;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+border: 5px solid #DCDCDC;
+border-left-color: #00CC99;
+border-radius: 100%;
+height: 50px;
+width: 50px;
+}
+.caixa3{
+width: 100px;
+height: 200px;
+background-color: orange;
+}
+.caixa3:hover{
+width: 200px;
+height: 200px;
+background-color: yellow;
+transition: width 0.3s, background-color 2s;}
+clear{
+    clear: both;
+}
+</style>
+</head>
+<body>
+<div class="caixa">
+<h1>Lorem Ipsum</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem suscipit incidunt eius voluptatibus cumque, itaque
+assumenda, reiciendis quaerat placeat laudantium eos quam earum ex exercitationem magnam excepturi tenetur inventore!</p>
+</div>
+<br>
+<div class="caixa2">
+<h1>Lorem Ipsum</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem suscipit incidunt eius voluptatibus cumque, itaque
+assumenda, reiciendis quaerat placeat laudantium eos quam earum ex exercitationem magnam excepturi tenetur inventore!</p>
+</div>
+
+<div class="box"></div>
+<div class="spinner"></div>
+<p><i class="fa fa-spinner w3-spin" style="font-size:64px"></i></p>
+<div class="caixa3"></div>
+</body>
+</html>
